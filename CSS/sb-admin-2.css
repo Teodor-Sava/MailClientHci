@@ -22,6 +22,20 @@ body {
     border-left: 1px solid #e7e7e7;
   }
 }
+#page-wrapper1 {
+  padding: 0 15px;
+  min-height: 568px;
+  background-color: white;
+}
+@media (min-width: 768px) {
+  #page-wrapper1 {
+    position: inherit;
+    margin: 0 0 0 250px;
+    padding: 0 30px;
+    background-color: white;
+    border-left: 1px solid #e7e7e7;
+  }
+}
 .navbar-top-links {
   margin-right: 0;
 }
@@ -147,7 +161,6 @@ body {
 .chat li {
   margin-bottom: 10px;
   padding-bottom: 5px;
-  border-bottom: 1px dotted #999999;
 }
 .chat li.left .chat-body {
   margin-left: 60px;
@@ -163,7 +176,6 @@ body {
   margin-right: 5px;
 }
 .chat-panel .panel-body {
-  height: 350px;
   overflow-y: scroll;
 }
 .login-panel {

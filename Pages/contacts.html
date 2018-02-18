@@ -13,16 +13,16 @@
     <title>Mail Client</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="./CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="./CSS/metisMenu.min.css" rel="stylesheet">
+    <link href="../CSS/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="./CSS/sb-admin-2.css" rel="stylesheet">
+    <link href="../CSS/sb-admin-2.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="./CSS/morris.css" rel="stylesheet">
+    <link href="../CSS/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -60,31 +60,31 @@
                         <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-alerts in">
-                        <li>
-                            <a href="index.html#" class="active">
-                                <div>
-                                    <i class="fa fa-comment fa-fw"></i> New Email
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>       
-                        <li>
-                            <a href="index.html#" class="active">
-                                <div>
-                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center active" href="index.html#">
-                                <strong>See All Alerts</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
+                            <li>
+                                    <a href="index.html#" class="active">
+                                        <div>
+                                            <i class="fa fa-comment fa-fw"></i> New Email
+                                            <span class="pull-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>       
+                                <li>
+                                    <a href="index.html#" class="active">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                            <span class="pull-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+        
+                                <li class="divider"></li>
+                                <li>
+                                    <a class="text-center active" href="index.html#">
+                                        <strong>See All Alerts</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </li>
                     </ul>
                     <!-- /.dropdown-alerts -->
                 </li>
@@ -96,7 +96,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-user in">
                         <li>
-                            <a href="Pages/profile.html" class="active">
+                            <a href="profile.html" class="active">
                                 <i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
                         <li>
@@ -120,7 +120,7 @@
                     <ul class="nav in" id="side-menu">
                         <br/>
                         <li>
-                            <a href="Pages/compose.html" class="btn btn-block btn-primary" type="button">
+                            <a href="compose.html" class="btn btn-block btn-primary" type="button">
                                 Compose
                                 <i class="fa fa-plus"></i>
                             </a>
@@ -140,7 +140,7 @@
                         <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html">
+                            <a href="../index.html">
                                 <i class="fa fa-envelope fa-fw"></i> Inbox (12)</a>
                         </li>
                         <li>
@@ -205,7 +205,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="index.html#">
+                        <a href="../index.html">
                             <div class="panel-footer">
                                 <span class="pull-left">View</span>
                                 <span class="pull-right">
@@ -229,7 +229,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="Pages/chat.html">
+                        <a href="chat.html">
                             <div class="panel-footer">
                                 <span class="pull-left">View</span>
                                 <span class="pull-right">
@@ -254,7 +254,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="Pages/contacts.html">
+                        <a href="#">
                             <div class="panel-footer">
                                 <span class="pull-left">View</span>
                                 <span class="pull-right">
@@ -275,114 +275,143 @@
                 </div>
                 <!-- /.col-lg-8 -->
                 <div class="col-lg-12">
-                    <div class="panel panel-success">
+                    <div class="panel panel-warning">
                         <div class="panel-heading">
-                            <i class="fa fa-bell fa-fw"></i> Inbox
+                            <i class="fa fa-bell fa-fw"></i> Contacts
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="list-group">
-                                <a href="Pages/mail.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                    </a>
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">
-                                            <i class="fa fa-envelope fa-fw"></i>Email 1</h5>
-                                        <hr>
-                                        <h5 class="mb-1">From: test@test.com</h5>
+                                            <span class="chat-img pull-left" style="margin-top: -5px; margin-right: 5px">
+                                                <img src="../Images/picture.jpg" alt="User Avatar" class="img-circle img-fluid" style="max-width:24px;">
+                                            </span>John Johnson
+                                            <a>
+                                                <i class="fa fa-trash fa-fw pull-right"></i>
+                                            </a>
+                                            <a href="mail.html">
+                                                <i class="fa fa-envelope fa-fw pull-right"></i>
+                                            </a>
+                                            <a href="chat.html">
+                                                <i class="fa fa-comments pull-right"></i>
+                                            </a>
+                                        </h5>
                                     </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                        blandit.
-                                        <span class="pull-right text-muted small">
-                                            <em>4 minutes ago</em>
-                                        </span>
-                                    </p>
-                                </a>
-                                <a href="Pages/mail.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                                </div>
+                                <div class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">
-                                            <i class="fa fa-envelope fa-fw"></i>Email 2</h5>
-                                        <hr>
-                                        <h5 class="mb-1">From: test@test.com</h5>
+                                            <span class="chat-img pull-left" style="margin-top: -5px; margin-right: 5px">
+                                                <img src="../Images/picture.jpg" alt="User Avatar" class="img-circle img-fluid" style="max-width:24px;">
+                                            </span>John Johnson
+                                            <a>
+                                                <i class="fa fa-trash fa-fw pull-right"></i>
+                                            </a>
+                                            <a href="mail.html">
+                                                <i class="fa fa-envelope fa-fw pull-right"></i>
+                                            </a>
+                                            <a href="chat.html">
+                                                <i class="fa fa-comments pull-right"></i>
+                                            </a>
+                                        </h5>
                                     </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                        blandit.
-                                        <span class="pull-right text-muted small">
-                                            <em>10 minutes ago</em>
-                                        </span>
-                                    </p>
-                                </a>
-                                <a href="Pages/mail.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                                </div>
+                                <div class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">
-                                            <i class="fa fa-envelope fa-fw"></i>Email 3</h5>
-                                        <hr>
-                                        <h5 class="mb-1">From: test@test.com</h5>
+                                            <span class="chat-img pull-left" style="margin-top: -5px; margin-right: 5px">
+                                                <img src="../Images/picture.jpg" alt="User Avatar" class="img-circle img-fluid" style="max-width:24px;">
+                                            </span>John Johnson
+                                            <a>
+                                                <i class="fa fa-trash fa-fw pull-right"></i>
+                                            </a>
+                                            <a href="mail.html">
+                                                <i class="fa fa-envelope fa-fw pull-right"></i>
+                                            </a>
+                                            <a href="chat.html">
+                                                <i class="fa fa-comments pull-right"></i>
+                                            </a>
+                                        </h5>
                                     </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                        blandit.
-                                        <span class="pull-right text-muted small">
-                                            <em>2 hours ago</em>
-                                        </span>
-                                    </p>
-                                </a>
-                                <a href=href="Pages/mail.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                                </div>
+                                <div class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">
-                                            <i class="fa fa-envelope fa-fw"></i>Email 4</h5>
-                                        <hr>
-                                        <h5 class="mb-1">From: test@test.com</h5>
+                                            <span class="chat-img pull-left" style="margin-top: -5px; margin-right: 5px">
+                                                <img src="../Images/picture.jpg" alt="User Avatar" class="img-circle img-fluid" style="max-width:24px;">
+                                            </span>John Johnson
+                                            <a>
+                                                <i class="fa fa-trash fa-fw pull-right"></i>
+                                            </a>
+                                            <a href="mail.html">
+                                                <i class="fa fa-envelope fa-fw pull-right"></i>
+                                            </a>
+                                            <a href="chat.html">
+                                                <i class="fa fa-comments pull-right"></i>
+                                            </a>
+                                        </h5>
                                     </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                        blandit.
-                                        <span class="pull-right text-muted small">
-                                            <em>16 hours ago</em>
-                                        </span>
-                                    </p>
-                                </a>
-                                <a href="Pages/mail.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                                </div>
+                                <div class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">
-                                            <i class="fa fa-envelope fa-fw"></i>Email 5</h5>
-                                        <hr>
-                                        <h5 class="mb-1">From: test@test.com</h5>
+                                            <span class="chat-img pull-left" style="margin-top: -5px; margin-right: 5px">
+                                                <img src="../Images/picture.jpg" alt="User Avatar" class="img-circle img-fluid" style="max-width:24px;">
+                                            </span>John Johnson
+                                            <a>
+                                                <i class="fa fa-trash fa-fw pull-right"></i>
+                                            </a>
+                                            <a href="mail.html">
+                                                <i class="fa fa-envelope fa-fw pull-right"></i>
+                                            </a>
+                                            <a href="chat.html">
+                                                <i class="fa fa-comments pull-right"></i>
+                                            </a>
+                                        </h5>
                                     </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                        blandit.
-                                        <span class="pull-right text-muted small">
-                                            <em>28 January 2018 at 18:29 </em>
-                                        </span>
-                                    </p>
-                                </a>
-                                <a href="Pages/mail.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                                </div>
+                                <div class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">
-                                            <i class="fa fa-envelope fa-fw"></i>Email 6</h5>
-                                        <hr>
-                                        <h5 class="mb-1">From: test@test.com</h5>
+                                            <span class="chat-img pull-left" style="margin-top: -5px; margin-right: 5px">
+                                                <img src="../Images/picture.jpg" alt="User Avatar" class="img-circle img-fluid" style="max-width:24px;">
+                                            </span>John Johnson
+                                            <a>
+                                                <i class="fa fa-trash fa-fw pull-right"></i>
+                                            </a>
+                                            <a href="mail.html">
+                                                <i class="fa fa-envelope fa-fw pull-right"></i>
+                                            </a>
+                                            <a href="chat.html">
+                                                <i class="fa fa-comments pull-right"></i>
+                                            </a>
+                                        </h5>
                                     </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                        blandit.
-                                        <span class="pull-right text-muted small">
-                                            <em>16 January 2018 at 10:13</em>
-                                        </span>
-                                    </p>
-                                </a>
-                                <a href="Pages/mail.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                                </div>
+                                <div class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">
-                                            <i class="fa fa-envelope fa-fw"></i>Email 7</h5>
-                                        <hr>
-                                        <h5 class="mb-1">From: test@test.com</h5>
+                                            <span class="chat-img pull-left" style="margin-top: -5px; margin-right: 5px">
+                                                <img src="../Images/picture.jpg" alt="User Avatar" class="img-circle img-fluid" style="max-width:24px;">
+                                            </span>John Johnson
+                                            <a>
+                                                <i class="fa fa-trash fa-fw pull-right"></i>
+                                            </a>
+                                            <a href="mail.html">
+                                                <i class="fa fa-envelope fa-fw pull-right"></i>
+                                            </a>
+                                            <a href="chat.html">
+                                                <i class="fa fa-comments pull-right"></i>
+                                            </a>
+                                        </h5>
                                     </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                        blandit.
-                                        <span class="pull-right text-muted small">
-                                            <em>5 January 2018 at 16:36</em>
-                                        </span>
-                                    </p>
-                                </a>
+                                </div>
                             </div>
                             <!-- /.list-group -->
-                            <a href="index.html#" class="btn btn-default btn-block">View All Mails</a>
+                            <a href="index.html#" class="btn btn-default btn-block">View All Contacts</a>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -392,21 +421,21 @@
             </div>
         </div>
 
-        <script src="./Js/jquery.min.js"></script>
+        <script src="../Js/jquery.min.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
-        <script src="./Js/bootstrap.min.js"></script>
+        <script src="../Js/bootstrap.min.js"></script>
 
         <!-- Metis Menu Plugin JavaScript -->
-        <script src="./Js/metisMenu.min.js"></script>
+        <script src="../Js/metisMenu.min.js"></script>
 
         <!-- Morris Charts JavaScript -->
-        <script src="./Js/raphael.min.js"></script>
-        <script src="./Js/morris.min.js"></script>
-        <script src="./Js/morris-data.js"></script>
+        <script src="../Js/raphael.min.js"></script>
+        <script src="../Js/morris.min.js"></script>
+        <script src="../Js/morris-data.js"></script>
 
         <!-- Custom Theme JavaScript -->
-        <script src="./Js/sb-admin-2.js"></script>
+        <script src="../Js/sb-admin-2.js"></script>
 
 
 </body>

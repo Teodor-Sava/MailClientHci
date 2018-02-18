@@ -13,16 +13,16 @@
     <title>Mail Client</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="./CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="./CSS/metisMenu.min.css" rel="stylesheet">
+    <link href="../CSS/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="./CSS/sb-admin-2.css" rel="stylesheet">
+    <link href="../CSS/sb-admin-2.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="./CSS/morris.css" rel="stylesheet">
+    <link href="../CSS/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -68,7 +68,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="divider"></li>       
+                        <li class="divider"></li>
                         <li>
                             <a href="index.html#" class="active">
                                 <div>
@@ -96,7 +96,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-user in">
                         <li>
-                            <a href="Pages/profile.html" class="active">
+                            <a href="profile.html" class="active">
                                 <i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
                         <li>
@@ -120,7 +120,7 @@
                     <ul class="nav in" id="side-menu">
                         <br/>
                         <li>
-                            <a href="Pages/compose.html" class="btn btn-block btn-primary" type="button">
+                            <a href="compose.html" class="btn btn-block btn-primary" type="button">
                                 Compose
                                 <i class="fa fa-plus"></i>
                             </a>
@@ -140,7 +140,7 @@
                         <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html">
+                            <a href="../index.html">
                                 <i class="fa fa-envelope fa-fw"></i> Inbox (12)</a>
                         </li>
                         <li>
@@ -205,7 +205,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="index.html#">
+                        <a href="../index.html">
                             <div class="panel-footer">
                                 <span class="pull-left">View</span>
                                 <span class="pull-right">
@@ -229,7 +229,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="Pages/chat.html">
+                        <a href="#">
                             <div class="panel-footer">
                                 <span class="pull-left">View</span>
                                 <span class="pull-right">
@@ -254,7 +254,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="Pages/contacts.html">
+                        <a href="contacts.html">
                             <div class="panel-footer">
                                 <span class="pull-left">View</span>
                                 <span class="pull-right">
@@ -275,138 +275,148 @@
                 </div>
                 <!-- /.col-lg-8 -->
                 <div class="col-lg-12">
-                    <div class="panel panel-success">
+                    <div class="chat-panel panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-bell fa-fw"></i> Inbox
+                            <i class="fa fa-comments fa-fw"></i> Chat
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu slidedown">
+                                    <li>
+                                        <a href="index.html#">
+                                            <i class="fa fa-refresh fa-fw"></i> Refresh
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#">
+                                            <i class="fa fa-check-circle fa-fw"></i> Available
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#">
+                                            <i class="fa fa-times fa-fw"></i> Busy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#">
+                                            <i class="fa fa-clock-o fa-fw"></i> Away
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="index.html#">
+                                            <i class="fa fa-sign-out fa-fw"></i> Sign Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div class="list-group">
-                                <a href="Pages/mail.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">
-                                            <i class="fa fa-envelope fa-fw"></i>Email 1</h5>
-                                        <hr>
-                                        <h5 class="mb-1">From: test@test.com</h5>
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="../Images/fff" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Jack Sparrow</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
                                     </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                        blandit.
-                                        <span class="pull-right text-muted small">
-                                            <em>4 minutes ago</em>
-                                        </span>
-                                    </p>
-                                </a>
-                                <a href="Pages/mail.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">
-                                            <i class="fa fa-envelope fa-fw"></i>Email 2</h5>
-                                        <hr>
-                                        <h5 class="mb-1">From: test@test.com</h5>
+                                </li>
+                                <hr>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="../Images/fff(1)" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago
+                                            </small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p class="pull-right">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
                                     </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                        blandit.
-                                        <span class="pull-right text-muted small">
-                                            <em>10 minutes ago</em>
-                                        </span>
-                                    </p>
-                                </a>
-                                <a href="Pages/mail.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">
-                                            <i class="fa fa-envelope fa-fw"></i>Email 3</h5>
-                                        <hr>
-                                        <h5 class="mb-1">From: test@test.com</h5>
+                                </li>
+                                <hr>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="../Images/fff" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Jack Sparrow</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
                                     </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                        blandit.
-                                        <span class="pull-right text-muted small">
-                                            <em>2 hours ago</em>
-                                        </span>
-                                    </p>
-                                </a>
-                                <a href=href="Pages/mail.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">
-                                            <i class="fa fa-envelope fa-fw"></i>Email 4</h5>
-                                        <hr>
-                                        <h5 class="mb-1">From: test@test.com</h5>
+                                </li>
+                                <hr>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="../Images/fff(1)" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago
+                                            </small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p class="pull-right">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
                                     </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                        blandit.
-                                        <span class="pull-right text-muted small">
-                                            <em>16 hours ago</em>
-                                        </span>
-                                    </p>
-                                </a>
-                                <a href="Pages/mail.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">
-                                            <i class="fa fa-envelope fa-fw"></i>Email 5</h5>
-                                        <hr>
-                                        <h5 class="mb-1">From: test@test.com</h5>
-                                    </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                        blandit.
-                                        <span class="pull-right text-muted small">
-                                            <em>28 January 2018 at 18:29 </em>
-                                        </span>
-                                    </p>
-                                </a>
-                                <a href="Pages/mail.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">
-                                            <i class="fa fa-envelope fa-fw"></i>Email 6</h5>
-                                        <hr>
-                                        <h5 class="mb-1">From: test@test.com</h5>
-                                    </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                        blandit.
-                                        <span class="pull-right text-muted small">
-                                            <em>16 January 2018 at 10:13</em>
-                                        </span>
-                                    </p>
-                                </a>
-                                <a href="Pages/mail.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">
-                                            <i class="fa fa-envelope fa-fw"></i>Email 7</h5>
-                                        <hr>
-                                        <h5 class="mb-1">From: test@test.com</h5>
-                                    </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                        blandit.
-                                        <span class="pull-right text-muted small">
-                                            <em>5 January 2018 at 16:36</em>
-                                        </span>
-                                    </p>
-                                </a>
-                            </div>
-                            <!-- /.list-group -->
-                            <a href="index.html#" class="btn btn-default btn-block">View All Mails</a>
+                                </li>
+                            </ul>
                         </div>
                         <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <div class="input-group">
+                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning btn-sm" id="btn-chat">
+                                        Send
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- /.panel-footer -->
                     </div>
                     <!-- /.panel .chat-panel -->
                 </div>
-
             </div>
         </div>
 
-        <script src="./Js/jquery.min.js"></script>
+        <script src="../Js/jquery.min.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
-        <script src="./Js/bootstrap.min.js"></script>
+        <script src="../Js/bootstrap.min.js"></script>
 
         <!-- Metis Menu Plugin JavaScript -->
-        <script src="./Js/metisMenu.min.js"></script>
+        <script src="../Js/metisMenu.min.js"></script>
 
         <!-- Morris Charts JavaScript -->
-        <script src="./Js/raphael.min.js"></script>
-        <script src="./Js/morris.min.js"></script>
-        <script src="./Js/morris-data.js"></script>
+        <script src="../Js/raphael.min.js"></script>
+        <script src="../Js/morris.min.js"></script>
+        <script src="../Js/morris-data.js"></script>
 
         <!-- Custom Theme JavaScript -->
-        <script src="./Js/sb-admin-2.js"></script>
+        <script src="../Js/sb-admin-2.js"></script>
 
 
 </body>

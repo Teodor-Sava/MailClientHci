@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" class="in">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mail Client</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../CSS/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../CSS/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../CSS/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="in">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Mail Client</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right in">
+                <li class="dropdown">
+                    <a class="dropdown-toggle active" data-toggle="dropdown" href="index.html#">
+                        <i class="fa fa-bell fa-fw"></i>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts in">
+                        <li>
+                            <a href="index.html#" class="active">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Email
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="index.html#" class="active">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center active" href="index.html#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle active" data-toggle="dropdown" href="index.html#">
+                        <i class="fa fa-user fa-fw"></i>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user in">
+                        <li>
+                            <a href="#" class="active">
+                                <i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li>
+                            <a href="index.html#" class="active">
+                                <i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar in" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav in" id="side-menu">
+                        <br/>
+                        <li>
+                            <a href="compose.html" class="btn btn-block btn-primary" type="button">
+                                Compose
+                                <i class="fa fa-plus"></i>
+                            </a>
+                        </li>
+                        <br/>
+                        <li>
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </li>
+
+                        <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="../index.html">
+                                <i class="fa fa-envelope fa-fw"></i> Inbox (12)</a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-arrow-up"></i> Sent Mails</a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-bookmark fa-fw"></i> Drafts</a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-adjust fa-fw"></i> Custom</a>
+                        </li>
+                        <li>
+                            <a href="index.html#" class="active">
+                                <i class="fa fa-wrench fa-fw"></i> More
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-second-level collapse">
+                                <li>
+                                    <a href="inbox.html">Social</a>
+                                </li>
+                                <li>
+                                    <a href="inbox.html">Promotions</a>
+                                </li>
+                                <li>
+                                    <a href="inbox.html">Work</a>
+                                </li>
+                                <li>
+                                    <a href="inbox.html">Community</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper" style="min-height: 849px;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Profile</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading"> User Username
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-3 col-lg-3 " align="center">
+                                    <img alt="User Pic" src="../Images/picture.jpg" class="img-circle img-responsive"> </div>
+
+                                <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg"> <br>
+                                          <dl>
+                                            <dt>DEPARTMENT:</dt>
+                                            <dd>Administrator</dd>
+                                            <dt>HIRE DATE</dt>
+                                            <dd>11/12/2013</dd>
+                                            <dt>DATE OF BIRTH</dt>
+                                               <dd>11/12/2013</dd>
+                                            <dt>GENDER</dt>
+                                            <dd>Male</dd>
+                                          </dl>
+                                        </div>-->
+                                <div class=" col-md-9 col-lg-9 ">
+                                    <table class="table table-user-information">
+                                        <tbody>
+                                            <tr>
+                                                <td>First Name:</td>
+                                                <td>User</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Last Name:</td>
+                                                <td>Username</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Date of Birth</td>
+                                                <td>01/24/1988</td>
+                                            </tr>
+
+                                            <tr>
+                                                <tr>
+                                                    <td>Gender</td>
+                                                    <td>Male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Home Address</td>
+                                                    <td>Lygten 37, Copenhagen</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Country</td>
+                                                    <td>Denmark</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Email</td>
+                                                    <td>
+                                                        test@test.com
+                                                    </td>
+                                                </tr>
+                                                <td>Phone Number</td>
+                                                <td>222-222-222-222(Landline)
+                                                    <br>
+                                                    <br>555-555-555-555(Mobile)
+                                                </td>
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary">
+                                <i class="glyphicon glyphicon-envelope"></i>
+                            </a>
+                            <span class="pull-right">
+                                <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-warning">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                                <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn  btn-danger">
+                                    <i class="fa fa-trash"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- /.col-lg-4 -->
+        </div>
+
+        <!-- END SINGLE MAIL !!!!!!!!!!!!!!!!!!!!!! -->
+
+    </div>
+    </div>
+
+    <script src="../Js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../Js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../Js/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../Js/raphael.min.js"></script>
+    <script src="../Js/morris.min.js"></script>
+    <script src="../Js/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../Js/sb-admin-2.js"></script>
+
+
+</body>
+
+</html>
